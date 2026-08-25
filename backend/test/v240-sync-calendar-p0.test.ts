@@ -229,7 +229,7 @@ describe('P0 同步进程与 Calendar 可读', () => {
     expect(coverageError).toBeTruthy();
   });
 
-  it('正式 helper --self-test-dates 与 --version，不编译旁路 binary', () => {
+  it.skipIf(process.platform !== 'darwin')('正式 helper --self-test-dates 与 --version，不编译旁路 binary', () => {
     expect(existsSync(CALENDAR_READER_PATH)).toBe(true);
     expect(existsSync(CALENDAR_READER_SOURCE)).toBe(true);
     expect(statSync(CALENDAR_READER_PATH).mtimeMs + 500).toBeGreaterThanOrEqual(statSync(CALENDAR_READER_SOURCE).mtimeMs);

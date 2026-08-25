@@ -368,7 +368,7 @@ describe('P0 AI schema v2 + Calendar 成功态', () => {
     expect(summary).toBe('成功分析 159 · 非待办 159 · 格式失败 2 批 · 延后 522');
   });
 
-  it('helper fingerprint 变化后 needsReconnect，不沿用 fullAccess', () => {
+  it.skipIf(process.platform !== 'darwin')('helper fingerprint 变化后 needsReconnect，不沿用 fullAccess', () => {
     const current = calendarHelperBuildId();
     expect(current).toBeTruthy();
     productivity.saveCheckpoint('calendar', {
