@@ -16,9 +16,15 @@ FORBIDDEN_FILES="$(find . -path './.git' -prune -o -type f \( -name '.env.local'
 FORBIDDEN_DIRS="$(find . -path './.git' -prune -o -type d \( -name node_modules -o -name dist -o -name logs -o -name backups \) -print)"
 [[ -z "$FORBIDDEN_DIRS" ]] || report '发现依赖、构建、日志或备份目录'
 
-if command -v rg >/dev/null 2>&1; then
-  rg -n -uu '/Users/carlos|658af970000000002001d6c2|sk-[A-Za-z0-9_-]{12,}|DEEPSEEK_API_KEY=[^[:space:]]+|CIMIDATA_APP_SECRET=[^[:space:]]+' . \
-    --glob '!.git/**' --glob '!scripts/privacy-check.sh' --glob '!backend/.env.example' >/dev/null && report '发现个人路径、真实账号或疑似凭证' || true
+SECRET_PATTERN='/Users/carlos|658af970000000002001d6c2|sk-[A-Za-z0-9_-]{12,}|DEEPSEEK_API_KEY=[^[:space:]]+|CIMIDATA_APP_SECRET=[^[:space:]]+'
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  git grep -nE "$SECRET_PATTERN" -- . \
+    ':(exclude)scripts/privacy-check.sh' ':(exclude)backend/.env.example' >/dev/null \
+    && report '发现个人路径、真实账号或疑似凭证' || true
+elif command -v rg >/dev/null 2>&1; then
+  rg -n -uu "$SECRET_PATTERN" . \
+    --glob '!scripts/privacy-check.sh' --glob '!backend/.env.example' >/dev/null \
+    && report '发现个人路径、真实账号或疑似凭证' || true
 else
   grep -R --exclude-dir=.git -E '/Users/carlos|658af970000000002001d6c2|sk-[A-Za-z0-9_-]{12,}' . >/dev/null 2>&1 && report '发现个人路径、真实账号或疑似凭证' || true
 fi
