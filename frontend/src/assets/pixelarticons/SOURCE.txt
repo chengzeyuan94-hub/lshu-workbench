@@ -1,0 +1,16 @@
+Pixelarticons
+============
+
+Locked production dependency: pixelarticons@2.4.1
+Import path: pixelarticons/react
+License: MIT (see LICENSE)
+Author: Gerrit Halfmann
+Grid: 24×24
+
+Weather mapping:
+- clear → Sun
+- cloudy_or_fog → Cloud
+- snow → Snowflake
+- thunderstorm → Zap
+- unknown → CircleQuestion
+- rain → official drop.svg from pixelarticons 1.8.1 (same author/MIT). 2.4.1 removed the raindrop glyph.

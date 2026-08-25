@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
+      - name: Privacy release gate
+        run: bash scripts/privacy-check.sh
+      - name: Backend install, test and build
+        working-directory: backend
+        run: npm ci && npm audit --audit-level=moderate && npm test && npm run build
+      - name: Frontend install, test and build
+        working-directory: frontend
+        run: npm ci && npm audit --audit-level=moderate && npm test && npm run build
+      - name: Shell syntax
+        run: bash -n scripts/*.sh Install.command Start.command

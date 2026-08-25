@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.lshu.workbench.calendar-reader</string>
+  <key>CFBundleName</key>
+  <string>LShu Calendar Reader</string>
+  <key>CFBundleVersion</key>
+  <string>2</string>
+  <key>CFBundleShortVersionString</key>
+  <string>2</string>
+  <key>NSCalendarsFullAccessUsageDescription</key>
+  <string>L叔工作台需要读取今后 7 天的日历忙闲，以便只读展示时间轴。不会写入你的个人日历。</string>
+  <key>NSCalendarsUsageDescription</key>
+  <string>L叔工作台需要读取今后 7 天的日历忙闲，以便只读展示时间轴。不会写入你的个人日历。</string>
+</dict>
+</plist>

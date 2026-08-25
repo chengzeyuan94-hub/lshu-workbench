@@ -1,0 +1,74 @@
+:root {
+  /* ===== V2 实体色 ===== */
+  --ui-white: #ffffff;
+  --ui-black: #111111;
+  --ui-orange: #ff5a1f;
+  --ui-yellow: #ffc928;
+  --ui-overlay: rgba(17, 17, 17, 0.52);
+
+  /* ===== 兼容别名：只映射到新四色 ===== */
+  --bg: var(--ui-white);
+  --bg-soft: var(--ui-white);
+  --ink: var(--ui-black);
+  --ink-soft: var(--ui-black);
+  --brown: var(--ui-orange);
+  --brown-light: var(--ui-orange);
+  --olive: var(--ui-black);
+  --olive-light: var(--ui-yellow);
+  --denim: var(--ui-black);
+  --denim-light: var(--ui-yellow);
+  --blush: var(--ui-orange);
+  --blush-light: var(--ui-yellow);
+  --red: var(--ui-orange);
+  --red-light: var(--ui-yellow);
+  --success: var(--ui-black);
+  --warning: var(--ui-yellow);
+  --danger: var(--ui-orange);
+
+  /* ===== 间距：4px 网格 ===== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --sp-1: var(--space-2);
+  --sp-2: var(--space-3);
+  --sp-3: var(--space-4);
+  --sp-4: var(--space-5);
+  --sp-5: var(--space-6);
+  --sp-6: var(--space-7);
+
+  /* ===== 边框 / 裁角 / 阴影 ===== */
+  --line-thin: 1px solid var(--ui-black);
+  --line-strong: 2px solid var(--ui-black);
+  --line-accent: 2px solid var(--ui-orange);
+  --radius-control: 0px;
+  --notch-sm: 6px;
+  --notch-md: 10px;
+  --shadow-action: 2px 2px 0 var(--ui-black);
+  --radius-lg: 0px;
+  --radius-md: 0px;
+  --radius-sm: 0px;
+  --border-w: 2px;
+  --border: var(--line-strong);
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-red: var(--shadow-action);
+
+  /* ===== 字体 ===== */
+  --font-pixel: "LShu Pixel", ui-monospace, "SFMono-Regular", Menlo, Monaco, monospace;
+  --font-display: var(--font-pixel);
+  --font-body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: var(--font-pixel);
+
+  --text-display: 48px;
+  --text-h1: 30px;
+  --text-h2: 20px;
+  --text-h3: 16px;
+  --text-body: 15px;
+  --text-small: 13px;
+  --text-micro: 11px;
+}

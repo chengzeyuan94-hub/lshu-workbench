@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" shape-rendering="crispEdges">
+  <title>人生日程打印机｜黑曜黑</title>
+  <desc>垂直俯视的黑色像素风小票打印机，白色小票与橙色状态灯，透明背景。</desc>
+  <style>.cn{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}.mono{font-family:"SFMono-Regular","Roboto Mono",monospace}</style>
+  <defs>
+    <g id="brandMark" fill="none" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter">
+      <path d="M16 2V8M16 8L4 30M16 8L30 30"/><path d="M54 2V30M44 10H66M40 20H68M40 30H68M46 6L42 12"/><path d="M80 3H108V30H80ZM80 16H108"/><path d="M114 7H128M121 2V30M114 16H128M121 16L114 26M121 16L128 25M132 2H146V10H132ZM132 14H146M134 18H144M139 18V30M130 24H148M130 30H148"/><path d="M152 10H163M158 3V29M152 20L163 16M166 5H182M176 5V27L170 30"/><path d="M190 5H202M190 5V26M190 15H202M190 26H202V2M207 5H220V22H207ZM212 22V30"/><path d="M228 7H240M234 2V30M228 16H240M234 16L228 26M234 16L240 25M244 4H256V24M244 4V18L240 30M252 24V30H259"/>
+    </g>
+  </defs>
+  <path d="M286 238H754V254H786V286H802V818H786V850H754V866H286V850H254V818H238V286H254V254H286Z" fill="#000000" opacity=".14"/>
+  <path d="M270 214H738V230H770V262H786V794H770V826H738V842H270V826H238V794H222V262H238V230H270Z" fill="#0B0B0C"/>
+  <path d="M286 230H722V246H754V278H770V778H754V810H722V826H286V810H254V778H238V278H254V246H286Z" fill="#1D1D1F"/>
+  <rect x="270" y="246" width="468" height="16" fill="#323235"/>
+  <rect x="254" y="278" width="16" height="500" fill="#141415"/>
+  <rect x="286" y="810" width="436" height="16" fill="#070707"/>
+  <path d="M310 250H714V266H730V306H714V322H310V306H294V266H310Z" fill="#050505"/>
+  <rect x="326" y="266" width="372" height="24" fill="#4B4B4D"/>
+  <rect x="342" y="274" width="340" height="16" fill="#101010"/>
+  <path d="M350 58H674V74H690V402H674V418H350V402H334V74H350Z" fill="#000000" opacity=".18"/>
+  <path d="M334 42H674V58H690V386H674V402H334V386H318V58H334Z" fill="#FCFCF8"/>
+  <rect x="334" y="42" width="340" height="16" fill="#FFFFFF"/>
+  <rect x="318" y="74" width="16" height="296" fill="#DADAD5"/>
+  <rect x="350" y="82" width="292" height="8" fill="#111111"/>
+  <use xlink:href="#brandMark" transform="translate(350 100) scale(1.03077 1.03125)" stroke="#111111" aria-label="人生日程打印机"/>
+  <rect x="350" y="144" width="292" height="4" fill="#111111"/>
+  <text x="350" y="176" class="mono" font-size="13" font-weight="700" letter-spacing="2" fill="#777772">NO. 024 / DAILY PLAN</text>
+  <rect x="350" y="198" width="48" height="48" fill="#111111"/>
+  <text x="374" y="232" class="mono" text-anchor="middle" font-size="24" font-weight="900" fill="#FFFFFF">09</text>
+  <rect x="414" y="202" width="152" height="8" fill="#393939"/>
+  <rect x="414" y="222" width="208" height="8" fill="#A8A8A3"/>
+  <rect x="414" y="242" width="104" height="8" fill="#D0D0CB"/>
+  <rect x="350" y="274" width="48" height="48" fill="#E0E0DC"/>
+  <text x="374" y="308" class="mono" text-anchor="middle" font-size="24" font-weight="900" fill="#222222">14</text>
+  <rect x="414" y="278" width="184" height="8" fill="#393939"/>
+  <rect x="414" y="298" width="128" height="8" fill="#A8A8A3"/>
+  <rect x="414" y="318" width="216" height="8" fill="#D0D0CB"/>
+  <rect x="350" y="346" width="292" height="8" fill="#111111"/>
+  <path d="M334 386H350V378H366V386H382V378H398V386H414V378H430V386H446V378H462V386H478V378H494V386H510V378H526V386H542V378H558V386H574V378H590V386H606V378H622V386H638V378H654V386H674V402H334Z" fill="#FCFCF8"/>
+  <rect x="286" y="398" width="436" height="8" fill="#3B3B3D"/>
+  <text x="294" y="462" class="mono" font-size="13" font-weight="800" letter-spacing="4" fill="#8A8A8C">SCHEDULE SYSTEM</text>
+  <path d="M674 430H714V438H722V478H714V486H674V478H666V438H674Z" fill="#050505"/>
+  <rect x="678" y="442" width="32" height="32" fill="#FF8618"/>
+  <rect x="686" y="450" width="16" height="16" fill="#FFD0A0"/>
+  <text x="694" y="510" class="mono" text-anchor="middle" font-size="11" font-weight="800" fill="#A8A8AA">ON</text>
+  <path d="M294 526H646V534H654V646H646V654H294V646H286V534H294Z" fill="#111112" stroke="#3B3B3D" stroke-width="8"/>
+  <text x="318" y="566" class="mono" font-size="14" font-weight="800" letter-spacing="2" fill="#EDEDEA">NEXT PRINT</text>
+  <rect x="318" y="586" width="16" height="16" fill="#FF8618"/>
+  <rect x="350" y="590" width="152" height="8" fill="#F2F2EE"/>
+  <rect x="518" y="590" width="104" height="8" fill="#6D6D70"/>
+  <rect x="318" y="618" width="16" height="16" fill="#6D6D70"/>
+  <rect x="350" y="622" width="208" height="8" fill="#9A9A9C"/>
+  <path d="M286 710H722V718H730V774H722V782H286V774H278V718H286Z" fill="#F4F4F0"/>
+  <rect x="302" y="730" width="8" height="32" fill="#FF8618"/>
+  <use xlink:href="#brandMark" transform="translate(342 729) scale(1.30769 1.3125)" stroke="#111111" aria-label="人生日程打印机"/>
+  <rect x="294" y="794" width="96" height="8" fill="#515154"/>
+  <rect x="634" y="794" width="80" height="8" fill="#515154"/>
+</svg>
